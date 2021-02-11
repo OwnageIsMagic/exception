@@ -6,7 +6,7 @@
 #ifndef BOOST_EXCEPTION_CE6983AC753411DDA764247956D89593
 #define BOOST_EXCEPTION_CE6983AC753411DDA764247956D89593
 
-#include <boost/config.hpp>
+#include <boost/exception/error_info.hpp>
 #ifndef BOOST_NO_CXX11_RVALUE_REFERENCES
 #include <boost/type_traits/is_nothrow_move_constructible.hpp>
 #endif
@@ -32,6 +32,7 @@ boost
     exception_detail
         {
         class
+        BOOST_SYMBOL_VISIBLE
         error_info_base
             {
             public:
@@ -48,6 +49,7 @@ boost
 
     template <class Tag,class T>
     class
+    BOOST_SYMBOL_VISIBLE
     error_info:
         public exception_detail::error_info_base
         {
