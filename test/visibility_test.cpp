@@ -9,7 +9,7 @@
 #   error This program requires exception handling.
 #endif
 
-#include "hidden.hpp"
+#include "visibility_test_lib.hpp"
 #include <boost/exception/get_error_info.hpp>
 #include <boost/detail/lightweight_test.hpp>
 

@@ -12,6 +12,6 @@ typedef boost::error_info<struct my_info_, int> my_info;
 
 struct BOOST_SYMBOL_VISIBLE my_exception: virtual std::exception, virtual boost::exception { };
 
-BOOST_SYMBOL_VISIBLE void hidden_throw();
+void hidden_throw();
 
 #endif
