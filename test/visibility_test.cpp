@@ -13,6 +13,8 @@
 #include <boost/exception/get_error_info.hpp>
 #include <boost/detail/lightweight_test.hpp>
 
+void BOOST_SYMBOL_IMPORT hidden_throw();
+
 int
 main()
     {
