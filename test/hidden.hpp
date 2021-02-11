@@ -8,7 +8,7 @@
 
 #include <boost/exception/info.hpp>
 
-typedef boost::error_info<struct BOOST_SYMBOL_VISIBLE my_info_, int> my_info;
+typedef boost::error_info<struct my_info_, int> my_info;
 
 struct BOOST_SYMBOL_VISIBLE my_exception: virtual std::exception, virtual boost::exception { };
 

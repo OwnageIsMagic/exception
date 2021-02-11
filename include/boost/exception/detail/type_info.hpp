@@ -69,7 +69,7 @@ boost
             bool
             operator<( type_info_ const & a, type_info_ const & b )
                 {
-                return 0!=(a.type_->before(*b.type_));
+                return strcmp(a.type_->name(), b.type_->name()) < 0;
                 }
             };
         }
